@@ -100,3 +100,14 @@ export const SalonTitle = styled.Text`
   margin-bottom: 20px;
   padding: 10px;
 `;
+export const CategoryTitle = styled.Text`
+  color: white;
+  font-size: 11px;
+  margin-bottom: 20px;
+  padding: 10px;
+`;
+export const CategoryImg = styled.Image`
+  height: 113px;
+  width: 64px;
+  margin: 10px;
+`;

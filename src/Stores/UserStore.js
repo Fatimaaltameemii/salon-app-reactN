@@ -4,7 +4,7 @@ import axios from "axios";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 let instance = axios.create({
-  baseURL: "http://localhost:8000/",
+  baseURL: "http://192.168.8.100:8000/",
 });
 
 class UserStore {

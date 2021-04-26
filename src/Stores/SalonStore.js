@@ -22,9 +22,18 @@ class SalonStore {
       console.error(error);
     }
   };
+  fetchSalon = async () => {
+    try {
+      const response = await instance.get("http://localhost:8000/salonId");
+      this.salonId = response.data;
+      this.loading = false;
+    } catch (error) {
+      console.error(error);
+    }
+  };
 }
 
 const salonStore = new SalonStore();
 salonStore.fetchSalons();
-
+salonStore.fetchSalon();
 export default salonStore;
